@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Outfit&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed';
+}
+
+:root{
+    --purple: #733FC8;
+    --gray: #48556A; 
+    --white: #FFFFFF;
+    --lightblack: #19202D;
+    --darkgray: #19202D;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2{
+   font-weight: 600;
+   font-size: 20px;
+   color: var(--white);
+   gap: 71px;
+}
+
+h3{
+    font-weight: 500;
+    font-style: 13px;
+    color: var(--white)
+}
+
+h4{
+    font-weight: 500;
+    font-style: 11px;
+    color: var(--white);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+p{
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--white);
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.container{
+    /* border: 1px solid red; */
+    width: 345px;
+    margin: auto;
+}
+
+.qoute{
+background-image: url(assets/qoute.svg);
+background-repeat: no-repeat;
+background-position: 90% top;
+}
+
+.item{
+    /* border: 2px solid black; */
+    width: 100%;
+    padding: 25px 32px 32px 32px ;
+    background-color: var(--purple);
+    border-radius: 8px;
+    margin-bottom: 23px;
+}
+
+.container .item .avar-div{
+    display: flex;
+    gap: 17px;
+}
+
+.container .item .avatar-title{
+    margin-top: 18px;
+}
+
+.container .item .avatar-desc{
+    margin-top: 40px;
+}
+
+.container .item{
+  margin-top: 40px;
+}
+
+.darkgray{
+    background-color: var(--gray);
+}
+
+.white{
+    background-color: var(--white);
+}
+
+.dark{
+    background-color: var(--darkgray);
+}
+
+@media screen and (min-width: 1150px) {
+    .container{
+        width: 1110px;
+        display: grid;
+        column-gap: 30px;
+        row-gap: 24px;
+        grid-template-columns: auto auto auto;
+        
+    }
+    .item{
+        margin: 0;
+    }
+    .item1{
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+    .item4{
+        grid-area: 2 / 2 / span 1 / span 2;
+    }
+    .item3{
+        grid-area: 1 / 4 span2 / span 1;
+    }
+    body{
+        display: flex;
+    }
+    
+}
+
+
+
